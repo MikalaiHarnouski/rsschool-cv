@@ -27,7 +27,17 @@ __General__:
 __JavaScript__:
 
 ```javascript
+function nicknameGenerator(name){
+ if(name.length < 4)
+ {
+     return "Error: Name too short"
+ }
+ return name.match(/^([a-zA-Z]{2})[aoeiuAOEIU]{0,1}([a-zA-Z]{0,1})/)[0];
+}
 
+function isIsogram(str){
+   return (new Set([...str.toLowerCase()])).size == str.length;
+}
 ```
 
 ## Experience
