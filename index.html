@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/default.min.css">
+    <script src="js/highlight.min.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
+    <title>RSSchool - HTML, CSS & Git Basics Task</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-bg"></div>
+        <div class="container">
+            <div class="main">
+                <div class="main-avatar"></div>
+                <div class="main-text">
+                    <h1>Mikalai Harnouski</h1>
+                    <p>Senior Software Developer</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="contacts section">
+            <div class="container">
+                <h2>Contacts</h2>
+                <ul class="contacts-list">
+                    <li><b><i style="background-image: url(./img/icons/telegram-icon.png);"></i>Telegram</b>:<a href="https://t.me/erasernick">@erasernick</a></li>
+                    <li><b><i style="background-image: url(./img/icons/gmail-icon.jpg);"></i>Email</b>:<a href="mailto:erasernick.mail@gmail.com">erasernick.mail@gmail.com</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="about section">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>I'm a Senior Software Developer (Backend), who potentially wants to get experience in JS.
+                    <p>
+            </div>
+        </section>
+        <section class="section-row">
+            <div class="container">
+                <section class="section">
+                    <h2>Tech Skills</h2>
+                    <h3>General:</h3>
+                    <ul>
+                        <li>Java</li>
+                        <li>Spring</li>
+                        <li>Datatabase (Mysql, PostgreSQL)</li>
+                        <li>Docker</li>
+                        <li>Python</li>
+                        <li>Bash</li>
+                        <li>Git</li>
+                        <li>SVN</li>
+                    </ul>
+                </section>
+            </div>
+        </section>
+        <section class="section-row">
+            <div class="container">
+                <section class="section">
+                    <h2>Experience</h2>
+                    <p>Senior Software Developer*, EpolSoft (Brest, Belarus), (Sep 2007 - till Now)</p>
+                    <p>Worked as Developer for the Telecomunication Platforms</p>
+                </section>
+            </div>
+        </section>
+        <section class="section-row">
+            <div class="container">
+                <section class="section-code">
+                    <h2>Code Examples</h2>
+                    <h3>JavaScript:</h3>
+                    <pre>
+						<code class="language-javascript">
+	function nicknameGenerator(name)
+	{
+		if(name.length < 4)
+		{
+			return "Error: Name too short"
+		}
+		return name.match(/^([a-zA-Z]{2})[aoeiuAOEIU]{0,1}([a-zA-Z]{0,1})/)[0];
+	}
+								
+	function isIsogram(str)
+	{
+		return (new Set([...str.toLowerCase()])).size == str.length;
+	}						
+						</code>
+					</pre>
+                </section>
+            </div>
+        </section>
+        <section class="section-row">
+            <div class="container">
+                <section class="section">
+                    <h2>Education</h2>
+                    <ul>
+                        <li>Mathematician-Programmer, Brest State A.S. Pushkin University, Department of Applied Mathematic, (Sep 2002 – June 2007)</li>
+                    </ul>
+                </section>
+            </div>
+        </section>
+        <section class="section-row">
+            <div class="container">
+                <section class="section">
+                    <h2>English</h2>
+                    <p>Level: B1</p>
+                </section>
+            </div>
+        </section>
+    </main>
+    <footer>
+        Made by Mikalai &copy; 2022
+    </footer>
+</body>
+
+</html>
